@@ -10,3 +10,56 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+
+
+
+
+##HTML:
+    - create login page
+        - add form tag
+            - add label
+            - add input for name/class
+
+        - add button (adventure on!)
+
+
+
+##Map Page:
+    - create map.js file
+        - import quests from data.js 
+        
+    - create index.html file
+        - pull quest.js file in HTML
+
+
+
+##Quest Page:
+    - create quest.js file
+        - import findByID function from utils
+        - import functions from local-storage-utils
+        - import quests from data.js 
+
+    - create index.html file
+        - pull quest.js file in HTML
+    
+
+
+##Eventlistener:
+    - get submit button to work in the form 
+        - pull 'form' element from HTML using querySelector
+        - pull 'setUser' function from local-storage.utils.js
+        - create 'addEventListener'
+        - on click, direct user to Map page
+
+
+        
+##Functions:
+    utils.js
+    - findByid (TDD)
+
+    local-storage.utils.js 
+    - getUser (TDD)
+    - setUser (TDD)
+    - updateUserGivenChoice (TDD)
+
+    
