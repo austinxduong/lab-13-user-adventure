@@ -14,11 +14,16 @@
 
 
 
+Planning:
+
+
 ##HTML:
     - create login page
         - add form tag
-            - add label
-            - add input for name/class
+            - add label(s)
+            - add 2ea input(s) 
+                - class
+                - name
 
         - add button (adventure on!)
 
