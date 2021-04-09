@@ -11,10 +11,10 @@ const params = new URLSearchParams(window.location.search);
 const questId = params.get('id');
 const quest = findById(quests, questId);
 
-const image = document.createElement('img');
+const img = document.createElement('img');
 const h2 = document.createElement('h2');
 
-image.src = `../assets/quests/${quest.image}`;
+img.src = `../assets/quest/${quest.image}`;
 
 h2.textContent = quest.title;
 
@@ -65,5 +65,5 @@ form.addEventListener('submit', (event) => {
 
 
 
-section.append(h2, image, form);
+section.append(h2, img, form);
 
