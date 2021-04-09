@@ -9,11 +9,8 @@ export function getTheUser() {
 }
 
 
+export function setTheUser(user) {
+    const stringyUser = JSON.stringify(user);
 
-
-
-//export function setUser(user) {
-    //const stringyUser = JSON.stringify(user);
-
-    //localStorage.setItem(USER, stringyUser);
-//}
+    localStorage.setItem(USER, stringyUser);
+}
