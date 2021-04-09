@@ -14,7 +14,7 @@ const quest = findById(quests, questId);
 const image = document.createElement('img');
 const h2 = document.createElement('h2');
 
-image.src = `../assetes/quests/${quest.image}`;
+image.src = `../assets/quests/${quest.image}`;
 
 h2.textContent = quest.title;
 
