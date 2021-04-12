@@ -1,0 +1,24 @@
+#quests {
+    position: relative;
+    background-image: url("../assets/map.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 850px;
+    height: calc(90vw * 642 / 900);
+    margin: auto;
+}
+
+.quest {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.quest.completed {
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+}
+
+.quest.quest.completed::after {
+    content: '✔';
+}
