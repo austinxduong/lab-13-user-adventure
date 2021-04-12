@@ -3,8 +3,8 @@
     background-image: url("../assets/map.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 850px;
-    height: calc(90vw * 642 / 900);
+    width: 70vw;
+    height: calc(100vw * 800 / 2000);
     margin: auto;
 }
 
