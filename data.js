@@ -1,14 +1,14 @@
 // quests[0].choices[0].description; ==> 'negotiate with them'
 
 
-const monsters = {
-    id: 'monsters',
-    title: 'A Den of Monsters',
+const gods = {
+    id: 'gods',
+    title: 'Clash of the Gods',
     map: {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
+    image: 'gods.png',
     description: `
         You enter the quest chamber only to be confronted by a hoard of
         monsters. And they look hungry. What do you do?
@@ -46,14 +46,14 @@ const monsters = {
     }]
 };
 
-const dragon = {
-    id: 'dragon',
-    title: 'A HAIRY!!! Dragon',
+const minotaur = {
+    id: 'minotaur',
+    title: 'Minotaur Labryinth',
     map: {
         top: '17%',
         left: '37%'
     },
-    image: 'dragon.jpg',
+    image: 'minotaur.jpg',
     audio: 'dragon.wav',
     action: 'dragon-growl.aiff',
     description: `
@@ -64,7 +64,7 @@ const dragon = {
     `,
     choices: [{
         id: 'run',
-        description: 'Get the hell out of the village',
+        description: 'SKRTTT out the Labryinth',
         result: `
             You high tail it in the opposite direction. Luckily,
             in the panic you find a bag on the ground with 15 gold.
@@ -86,7 +86,7 @@ const dragon = {
         gold: 0
     }, {
         id: 'archer',
-        description: 'Emulate that guy from LOR who shot an arrow',
+        description: 'Offer a cookie',
         result: `
             Inspired by the legend of Bard the Bowman, you notice a
             stunned archer standing nearby and take their bow and quiver,
@@ -101,39 +101,35 @@ const dragon = {
     }]
 };
 
-const treasure = {
-    id: 'treasure',
-    title: 'A Golden Treasure',
+const oracle = {
+    id: 'oracle',
+    title: 'Visit Oracle for blessings',
     map: {
         top: '31%',
         left: '5%'
     },
-    prerequisites: ['dragon', 'monsters'],
-    image: 'treasure-chests.png',
+    prerequisites: ['dragon', 'gods'],
+    image: 'oracle.jpg',
     audio: 'treasure-chests.wav',
     action: 'chest-opening.wav',
     description: `
-        As you enter the quest chamber you notice three chests before you.
-        Just as you start to imagine the wealth, you see a giant serpent
-        emerge from the back of the chamber. You'll need to make a run for it,
-        but you have time to open one chest before you take off. Which one 
-        do you choose?
+        As you enter the quest shrine, you meet an Orcale in Olympus. You are advised 3 blessings from 3 Greek Gods. Choose your blessing.
     `,
     choices: [{
-        id: 'wooden',
-        description: 'A Wooden Chest',
+        id: 'Aphrodite',
+        description: 'Aphrodites Beauty',
         result: 'You grab 40 gold pieces!',
         hp: 0,
         gold: 40
     }, {
-        id: 'golden',
-        description: 'A Golden Chest',
+        id: 'Ares',
+        description: 'Ares strength',
         result: 'Oh no! The chest is booby trapped with poison and you take 50 hp damage',
         hp: -50,
         gold: 0
     }, {
-        id: 'jeweled',
-        description: 'A Jeweled Chest',
+        id: 'Athena',
+        description: 'Athenas wisdom',
         result: 'A warm light engulfs you and you gain 35 hp',
         hp: 35,
         gold: 0
@@ -141,9 +137,9 @@ const treasure = {
 };
 
 const quests = [
-    monsters, 
-    treasure,
-    dragon,
+    gods, 
+    oracle,
+    minotaur,
 ];
 
 export default quests;
