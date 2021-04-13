@@ -1,69 +1,69 @@
-import { findById } from '../utils.js';
-import quests from '../data.js';
-import { updateUserGivenChoice, getTheUser } from '../local-storage-utils.js';
+import findById from '../common/find-by-id.js';
+import quests from '../data/data.js';
+import { saveTheUser, getTheUser } from '../data/api.js';
+import loadProfile from '../common/load-profile.js';
+import createChoice from './create-choice.js';
+import scoreQuest from './score-quest.js';
 
+loadProfile();
 
+const searchParams = new URLSearchParams(window.location.search);
 
+const questId = searchParams.get('id');
 
-const section = document.querySelector('section');
-const params = new URLSearchParams(window.location.search);
-
-const questId = params.get('id');
 const quest = findById(quests, questId);
 
-const img = document.createElement('img');
-const h2 = document.createElement('h2');
-
-img.src = `../assets/quest/${quest.image}`;
-
-h2.textContent = quest.title;
-
-const form = document.createElement('form');
-
-
-
-
-
-for (let choice of quest.choices) {
-    const label = document.createElement('label');
-
-    const radio = document.createElement('input');
-    radio.type = 'radio';
-    radio.name = 'choice';
-    radio.value = choice.id;
-    label.append(choice.description, radio);
-
-    form.append(label);
-
+if (!quest) {
+    window.location = '../map';
 }
 
+const title = document.getElementById('title');
+const image = document.getElementById('image');
+const audio = document.getElementById('audio');
+const description = document.getElementById('description');
+const choiceForm = document.getElementById('choice-form');
+const choices = document.getElementById('choices');
+const result = document.getElementById('result');
+const resultDescription = document.getElementById('result-description');
 
+title.textContent = quest.title;
+image.src = '../assets/quests/' + quest.image;
+audio.src = '../assets/quests/' + quest.audio;
+description.textContent = quest.description;
 
+for (let index = 0; index < quest.choices.length; index++) {
+    const choice = quest.choices[index];
 
-const button = document.createElement('button');
-button.textContent = 'Submit';
+    const choiceDOM = createChoice(choice);
 
-form.append(button);
+    choices.appendChild(choiceDOM);
+}
 
-
-
-
-
-form.addEventListener('submit', (event) => {
+choiceForm.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const formData = new FormData(form);
+    const formData = new FormData(choiceForm);
     const choiceId = formData.get('choice');
 
     const choice = findById(quest.choices, choiceId);
-    updateUserGivenChoice(questId, choice);
 
-    alert(JSON.stringify(getTheUser(), true, 2));
+    const user = getTheUser();
 
-    window.location = '../map';
+    scoreQuest(choice, quest.id, user);
+
+    saveTheUser(user);
+
+    audio.src = '../assets/quests/' + quest.action;
+    choiceForm.classList.add('hidden');
+    result.classList.remove('hidden');
+    resultDescription.textContent = choice.result;
+
+    loadProfile();
+
+
 });
 
 
 
-section.append(h2, img, form);
+
 

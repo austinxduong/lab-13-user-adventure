@@ -1,0 +1,37 @@
+.text-promt {
+    display: block;
+    margin: 10px 0;
+}
+
+.text-promt label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    
+}
+
+.text-promt input {
+    display: block;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+#avatars {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#avatars label {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 10px;
+    
+}
+
+#avatars input, #avatars img {
+    margin: 0 7px;
+    
+}

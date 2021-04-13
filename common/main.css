@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+body {
+    font-family: 'Heebo', "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    background: #5aa17f;
+    margin: 0;
+    
+}
+
+h1, h2 {
+    font-family: 'Cinzel';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+header, main {
+    text-align: center;
+    padding: 8px;
+
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid teal;
+}
+
+h1 {
+    margin: 0 20px;
+    flex-grow: 2;
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
+    height: 65px;
+    background: lightgrey;
+    text-align: center;
+    padding-top: 25px;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+input, fieldset, button {
+    border: 1px solid teal;
+    font-family: 'Cinzel';
+
+}
+
+button {
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    
+}
+
