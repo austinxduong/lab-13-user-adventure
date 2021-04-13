@@ -4,40 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <title>Enter The Trojan War</title>
+    <link rel="stylesheet" href="common/main.css">
+    <link rel="stylesheet" href="home/home.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <div class="gutter-right logo">
-            <img src="assets/poseidon.png"/>
+            
         </div>
     </header>
     <main>
-        <section class="main-section">
-           <form>
-               <label>
-                   Class:
-                   <input name="class" />
-               </label>
-               <label>
-                   Name:
-                   <input name="name" />
-               </label>
-               <button>Enter the Trojan War!</button>
-           </form>
-        </section>
+        <h2>
+            Enter the Trojan War
+        </h2>
+        <form id="user-sign-up">
+            <p class="text-prompt">
+                <label for="name">Warrior Name:</label>
+                <input id="name" name="name" required>
+            </p>
+            <fieldset>
+                <legend>Warrior Type:</legend>
+                <p id="avatars">
+                    <label>
+                        <input type="radio" name "race" required value="Achilles">
+                        <img src="">
+                        Achilles
+                    </label>
+                    <label>
+                        <input type="radio" name "race" required value="Hercules">
+                        <img src="">
+                        Hercules
+                    </label>
+                    <label>
+                    <input type="radio" name "race" required value="Prometheus">
+                        <img src="">
+                        Prometheus
+                    </label>
+                </p>
+            </fieldset>
+            <button> Start Battle</button>
+        </form>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; Olympus</div>
     </footer>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="home/home.js"></script>
 </body>
 
 </html>
