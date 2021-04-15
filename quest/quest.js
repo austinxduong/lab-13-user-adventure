@@ -27,8 +27,8 @@ const result = document.getElementById('result');
 const resultDescription = document.getElementById('result-description');
 
 title.textContent = quest.title;
-image.src = '../assets/quests/' + quest.image;
-audio.src = '../assets/quests/' + quest.audio;
+image.src = '../assets/quest/' + quest.image;
+audio.src = '../assets/quest/' + quest.audio;
 description.textContent = quest.description;
 
 for (let index = 0; index < quest.choices.length; index++) {

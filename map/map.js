@@ -3,7 +3,7 @@ import quests from '../data/data.js';
 import createQuestLink from './create-quest-link.js';
 import isDead from '../common/is-dead.js';
 import hasCompletedAllQuests from './has-completed-all-quests.js';
-import createCompletedQuest from './create-completed-quest';
+import createCompletedQuest from './create-completed-quest.js';
 import loadProfile from '../common/load-profile.js';
 
 

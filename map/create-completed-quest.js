@@ -1,3 +1,4 @@
+export default 
 function createCompletedQuest(quest) {
     const span = document.createElement('span');
     span.classList.add('quest');
@@ -10,4 +11,3 @@ function createCompletedQuest(quest) {
     return span;
 }
 
-export default createCompletedQuest;
