@@ -57,10 +57,7 @@ const minotaur = {
     audio: 'dragon.wav',
     action: 'dragon-growl.aiff',
     description: `
-        You run to a nearby village you have heard is being
-        terrorized by a dragon. Sure enough as you rent a room
-        in a local inn, you go outside and see the dragon about
-        to lay seige! What do you do?
+        Navigating the labryinth, you keep hearing scary sounds echoing the walls. As you try to escape, the thumping sounds keep getting louder and louder. Eventually, you make the wrong turn and a minotaur is in front of you.
     `,
     choices: [{
         id: 'run',
@@ -113,7 +110,7 @@ const oracle = {
     audio: 'treasure-chests.wav',
     action: 'chest-opening.wav',
     description: `
-        As you enter the quest shrine, you meet an Orcale in Olympus. You are advised 3 blessings from 3 Greek Gods. Choose your blessing.
+        You visit a temp you meet an Orcale in Olympus. You are advised 3 blessings from 3 Greek Gods. Choose your blessing.
     `,
     choices: [{
         id: 'Aphrodite',
