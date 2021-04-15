@@ -54,7 +54,7 @@ const minotaur = {
         left: '37%'
     },
     image: 'minotaur.jpg',
-    audio: 'dragon.wav',
+    //audio: 'dragon.wav',
     action: 'dragon-growl.aiff',
     description: `
         Navigating the labryinth, you keep hearing scary sounds echoing the walls. As you try to escape, the thumping sounds keep getting louder and louder. Eventually, you make the wrong turn and a minotaur is in front of you.
@@ -63,10 +63,7 @@ const minotaur = {
         id: 'run',
         description: 'SKRTTT out the Labryinth',
         result: `
-            You high tail it in the opposite direction. Luckily,
-            in the panic you find a bag on the ground with 15 gold.
-            Unluckily, you trip over a discarded wagon wheel on your
-            way out of town and take 40 hp damage. 
+            You slide under the Minotaur but got scathed on your cheek from his hoof. You take a 40 hp damage. 
         `,
         hp: -35,
         gold: 15
@@ -74,10 +71,7 @@ const minotaur = {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',
         result: `
-            You attempt to charge towards the dragon, who sees you approach
-            and let's loose a fireball. You wake up the next morning and the
-            village has been completely burned to the ground.
-            Oh, and you take 45 hp damage.
+            You attempt to charge towards the Minotaur with your sword. The Minotaur swings his club, and you dodge. However, he grabs you with his right hand. You get pummeled and take -45 damage. 
         `,
         hp: -45,
         gold: 0
@@ -85,13 +79,7 @@ const minotaur = {
         id: 'archer',
         description: 'Offer a cookie',
         result: `
-            Inspired by the legend of Bard the Bowman, you notice a
-            stunned archer standing nearby and take their bow and quiver,
-            climb to the top of a tall tower and take aim. On the dragon's
-            next pass you steady your aim and let one fly. Amazingly,
-            you strike the dragon in the eye, piercing into the brain and
-            killing the dragon instantly. The villagers declare you their hero
-            and award you 90 gold.
+            You appeal to the Minotaur's senses, and his beastly quality melts away when he sees the cookie. You 90 gold.
         `,
         hp: 0,
         gold: 90
