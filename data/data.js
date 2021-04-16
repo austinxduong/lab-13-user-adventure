@@ -41,7 +41,7 @@ const gods = {
 
 const minotaur = {
     id: 'minotaur',
-    title: 'Minotaur Labryinth',
+    title: 'Labryinth',
     map: {
         top: '57%',
         left: '36%'
