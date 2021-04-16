@@ -24,3 +24,7 @@ main {
     background: teal;
     font-weight: bolder;
 }
+
+h1 {
+    text-align: left;
+}

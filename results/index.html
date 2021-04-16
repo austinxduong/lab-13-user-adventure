@@ -6,28 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/home.css">
-    <title>Document</title>
+    <title>Trojan War</title>
+    <link rel="stylesheet" href="../common/main.css">
+    <link rel="stylesheet" href="../common/profile.css">
+    <link rel="stylesheet" href="results.css">
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="assets/poseidon.png"/>
+        <h1>Trojan War</h1>
+        <div class="profile">
+            <span id="name"></span>
+            <span class="profile-stat-label">HP:</span>
+            <span id="hp"></span>
+            <span class="profile-stat-label">Gold:</span>
+            <span id="gold"></span>
         </div>
     </header>
-    <main>
-        <section class="main-section">
-           Results Page!
-        </section>
-    </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
 
-    <script type="module" src="quest.js"></script>
+    <main>
+        <h2> You did not survive </h2>
+        <p>
+            <a href="../">Play Again</a>
+        </p>
+    </main>
+
+
+
+    <script type="module" src="results.js"></script>
 </body>
 
 </html>

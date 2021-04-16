@@ -10,16 +10,13 @@ const gods = {
     },
     image: 'gods.png',
     description: `
-        You enter the quest chamber only to be confronted by a hoard of
-        monsters. And they look hungry. What do you do?
+        You climbed mount Olympus, and got caught in the middle of a clash between the Greek Gods. It's wild up up here. 
     `,
     choices: [{
         id: 'negotiate',
         description: 'Negotiate with them',
         result: `
-            Knowing the monsters are not too bright, you offer to go buy them all
-            turkey dinners from the village pub. They give you 35 gold for meals
-            that will never be delivered. I hope you can live with yourself. 
+            Because you're such a good peacemaker, and flexed your communication skills, Zeus gives you 35 gold.
         `,
         hp: 0,
         gold: 35
@@ -27,19 +24,15 @@ const gods = {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',
         result: `
-            Brandishing your sword you let out a warrior's cry and charge into the monsters
-            hacking and slashing. Before long you stand panting gazing across the bodies of
-            your vanquished foes. The bad news is you take 30 hp damage. The good news is you
-            find 50 gold.
+            You didn't last a chance and took a -30 damage hit, but you found 50 gold.
         `,
         hp: -30,
         gold: 50
     }, {
         id: 'run',
-        description: 'Run away like good Sir Robin',
+        description: 'Pretend you saw nothing ',
         result: `
-            As you make a dash for the door a giant spider descends and take a bite of flesh,
-            causing 50 hp damage.
+            They saw you, and couldn't let you get away. You took a -50 damage hit.
         `,
         hp: -50,
         gold: 0
@@ -55,7 +48,7 @@ const minotaur = {
     },
     image: 'minotaur.jpg',
     //audio: 'dragon.wav',
-    action: 'dragon-growl.aiff',
+    //action: 'dragon-growl.aiff',
     description: `
         Navigating the labryinth, you keep hearing scary sounds echoing the walls. As you try to escape, the thumping sounds keep getting louder and louder. Eventually, you make the wrong turn and a minotaur is in front of you.
     `,
@@ -95,21 +88,21 @@ const oracle = {
     },
     prerequisites: ['dragon', 'gods'],
     image: 'oracle.jpg',
-    audio: 'treasure-chests.wav',
-    action: 'chest-opening.wav',
+    //audio: 'treasure-chests.wav',
+    //action: 'chest-opening.wav',
     description: `
-        You visit a temp you meet an Orcale in Olympus. You are advised 3 blessings from 3 Greek Gods. Choose your blessing.
+        You visit a cool temple & meet an Orcale in Olympus. You are advised 3 blessings from 3 Greek Gods. Choose your blessing.
     `,
     choices: [{
         id: 'Aphrodite',
         description: 'Aphrodites Beauty',
-        result: 'You grab 40 gold pieces!',
+        result: 'Because you are so beautiful now, a civilian gifted you 40 gold pieces!',
         hp: 0,
         gold: 40
     }, {
         id: 'Ares',
         description: 'Ares strength',
-        result: 'Oh no! The chest is booby trapped with poison and you take 50 hp damage',
+        result: 'Too much of anything, especially strength is detrimental. You take a -50 damage hit because your body could not handle it',
         hp: -50,
         gold: 0
     }, {
