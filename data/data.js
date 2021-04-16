@@ -5,8 +5,8 @@ const gods = {
     id: 'gods',
     title: 'Clash of the Gods',
     map: {
-        top: '89%',
-        left: '44%'
+        top: '10%',
+        left: '40%'
     },
     image: 'gods.png',
     description: `
@@ -50,8 +50,8 @@ const minotaur = {
     id: 'minotaur',
     title: 'Minotaur Labryinth',
     map: {
-        top: '17%',
-        left: '37%'
+        top: '57%',
+        left: '36%'
     },
     image: 'minotaur.jpg',
     //audio: 'dragon.wav',
@@ -90,8 +90,8 @@ const oracle = {
     id: 'oracle',
     title: 'Visit Oracle for blessings',
     map: {
-        top: '31%',
-        left: '5%'
+        top: '34%',
+        left: '70%'
     },
     prerequisites: ['dragon', 'gods'],
     image: 'oracle.jpg',
