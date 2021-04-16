@@ -58,13 +58,15 @@ main {
 
 input, fieldset, button {
     border: 1px solid teal;
+    border-radius: 8px;
     font-family: 'Cinzel';
     
 
 }
 
+
 button {
-    margin: 20px 0;
+    margin: 40px 0;
     padding: 20px;
     font-size: 1.2em;
     font-weight: bolder;
