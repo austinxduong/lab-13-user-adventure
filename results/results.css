@@ -1,3 +1,17 @@
 h1 {
     text-align: left;
 }
+
+button {
+    margin: 40px 0;
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+    background-color: lightgoldenrodyellow
+}
