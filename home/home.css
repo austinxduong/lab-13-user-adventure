@@ -18,15 +18,18 @@
 }
 
 #avatars {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
+    
 
 }
 
 #avatars label {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    
     margin: 0 10px 10px;
     
 }
@@ -35,6 +38,3 @@
     margin: 0 7px;
 }
 
-fieldset {
-    text-align: center;
-}
