@@ -22,3 +22,7 @@
 .quest.quest.completed::after {
     content: '✔';
 }
+
+h1 {
+    text-align: left;
+}
