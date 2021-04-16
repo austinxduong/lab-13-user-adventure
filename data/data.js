@@ -3,7 +3,7 @@
 
 const gods = {
     id: 'gods',
-    title: 'Clash of the Gods',
+    title: 'Mount Olympus',
     map: {
         top: '10%',
         left: '40%'
@@ -81,7 +81,7 @@ const minotaur = {
 
 const oracle = {
     id: 'oracle',
-    title: 'Visit Oracle for blessings',
+    title: 'Holy Temple',
     map: {
         top: '34%',
         left: '70%'
