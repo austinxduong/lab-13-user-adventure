@@ -17,7 +17,7 @@
 Planning:
 
 
-##HTML:
+## HTML:
 
     - create login page
         - add form tag
@@ -30,7 +30,7 @@ Planning:
 
 
 
-##Map Page:
+## Map Page:
 
     - create map.js file
         - import quests from data.js 
@@ -40,7 +40,7 @@ Planning:
 
 
 
-##Quest Page:
+## Quest Page:
 
     - create quest.js file
         - import findByID function from utils
@@ -52,7 +52,7 @@ Planning:
     
 
 
-##Eventlistener:
+## Eventlistener:
 
     - get submit button to work in the form 
         - pull 'form' element from HTML using querySelector
@@ -62,7 +62,7 @@ Planning:
 
 
         
-##Functions:
+## Functions:
 
     utils.js
     - findByid (TDD)
